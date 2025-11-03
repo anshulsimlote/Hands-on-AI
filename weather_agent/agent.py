@@ -135,3 +135,9 @@ while True:
             break
 
 print("\n\n\n")
+
+
+# 👉🏻 Delhi weather?
+# 🧠 The user is asking for the weather in Delhi. I should use the `get_weather` tool to retrieve this information.
+# 🛠️: get_weather (Delhi)
+# 🛠️: get_weather (Delhi) = The weather in
