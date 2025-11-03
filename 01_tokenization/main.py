@@ -7,3 +7,8 @@ tokens = enc.encode(text)
 
 #Tokens [25216, 1354, 0, 357, 939, 499, 13454]
 print(f"Tokens {tokens}")
+
+decoded = enc.decode([25216, 1354, 0, 357, 939, 499, 13454])
+
+print(f"Decoded {decoded}")
+
