@@ -2,13 +2,16 @@ import tiktoken
 
 enc = tiktoken.encoding_for_model("gpt-4o")
 
-text = "Hey there! I am Goku"
-tokens = enc.encode(text)
+user_input = input("Enter some text ")
+#Eg - Hi I am Kong.
+print(f" user_input {user_input}")
 
-#Tokens [25216, 1354, 0, 357, 939, 499, 13454]
-print(f"Tokens {tokens}")
+tokens = enc.encode(user_input)
+#Eg - [12194, 357, 939, 23911, 13]
 
-decoded = enc.decode([25216, 1354, 0, 357, 939, 499, 13454])
+print(f" Tokens {tokens}")
 
-print(f"Decoded {decoded}")
+dec = enc.decode(tokens)
 
+print(f" String {dec}")
+#Eg - Hi I am Kong.
