@@ -1,8 +1,7 @@
 from openai import OpenAI
-from config import GEMINI_API_KEY
-
+import os
 client = OpenAI(
-    api_key= GEMINI_API_KEY,
+    api_key= os.getenv("GOOGLE_API_KEY"),
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
